@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Buncher</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Main section.  Will appear by default and when other subpages are closed -->
+    <main>
+        <div id="header">
+            <img id="portrait" src="Resources/IMG_0513.jpg" alt="Douglas Buncher">
+            <!-- Current image is a placeholder.  When I get a  -->
+            <h1>Douglas Buncher</h1>
+        </div>
+        <h3>Web Developer In-Training</h3>
+        <h3>Contact:</h3>
+        <h3><a href="mailto: buncherd01@gmail.com" target="_blank"><i
+                    class="fas fa-envelope"></i>:buncherd01@gmail.com</a></h3>
+        <h6>Photo by <a
+                href="https://unsplash.com/@korpa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jr
+                Korpa</a> on <a
+                href="https://unsplash.com/s/photos/fantasy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+        </h6>
+    </main>
+
+    <!-- Side navbar -->
+    <nav>
+        <div class="navButton">
+            <a href="javascript:void(0)" onclick="openAbout(), closeTech(), closeProjects()">
+                <p><i class="fas fa-user"></i></p>
+                <p>About</p>
+            </a>
+        </div>
+        <div class="navButton">
+            <a href="javascript:void(0)" onclick="closeAbout(), openTech(), closeProjects()">
+                <p><i class="fas fa-cog"></i></p>
+                <p>Tech</p>
+            </a>
+        </div>
+        <div class="navButton">
+            <a href="javascript:void(0)" onclick="closeAbout(), closeTech(), openProjects()">
+                <p><i class="fas fa-photo-video"></i></p>
+                <p>Projects</p>
+            </a>
+        </div>
+        <!-- As PHP e-mail form handling is impossible on Github, this is being disabled and left in for posterity. -->
+        <!-- <div class="navButton">
+            <a href="javascript:void(0)" onclick="closeAbout(), closeTech(), closeProjects(), openContact()">
+                <p><i class="fas fa-envelope"></i></p>
+                <p>Contact</p>
+            </a>
+        </div> -->
+        <div class="navButton">
+            <a href="https://www.linkedin.com/in/douglas-buncher-89520a92" target="_blank">
+                <p><i class="fab fa-linkedin"></i></p>
+                <p>LinkedIn</p>
+            </a>
+        </div>
+        <div class="navButton">
+            <a href="https://github.com/v074" target="_blank">
+                <p><i class="fab fa-github-square"></i></p>
+                <p>GitHub</p>
+            </a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h4><a href="javascript:void(0)" class="close" onclick="closeAbout()"><i class="fas fa-times"></i></a></h4>
+        <h2>About Me</h2>
+        <h3>Introduction</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur! Laborum sint magnam ducimus corrupti
+            aliquid quisquam, quia odit dolores, labore quaerat, molestias officia eveniet fugit? Porro doloremque illo
+            inventore.</p>
+        <h3>Education and Work History</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur! Laborum sint magnam ducimus corrupti
+            aliquid quisquam, quia odit dolores, labore quaerat, molestias officia eveniet fugit? Porro doloremque illo
+            inventore.</p>
+        <h3>Interests</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur! Laborum sint magnam ducimus corrupti
+            aliquid quisquam, quia odit dolores, labore quaerat, molestias officia eveniet fugit? Porro doloremque illo
+            inventore.</p>
+        <div id="resumeLink"><a href="Resources/DCBresume_Revised - Computer.pdf" target="_blank">View Resume Here</a>
+        </div>
+
+    </section>
+
+    <section id="technologies">
+        <h4><a href="javascript:void(0)" class="close" onclick="closeTech()"><i class="fas fa-times"></i></a> </h4>
+        <h2>Technologies</h2>
+        <div id="techContainer">
+            <div class="tech">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+
+            <div class="tech">
+                <i class="fab fa-sass"></i>
+                <p>SASS</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-chrome"></i>
+                <p>Chrome Dev Tools</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-git"></i>
+                <p>Git</p>
+            </div>
+            <div class="tech">
+                <i class="fas fa-terminal"></i>
+                <p>Terminal</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-gitlab"></i>
+                <p>Axios</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-node-js"></i>
+                <p>Express.js</p>
+            </div>
+            <div class="tech">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <!-- MongoDB and MySQL have a metric ton of legal requirements for their logos, including a no-alteration clause in some cases.  I'm not risking a C&D, so I'm just using a generic database icon here. -->
+            <div class="tech">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h4><a href="javascript:void(0)" class="close" onclick="closeProjects()"><i class="fas fa-times"></i></a></h4>
+        <h2>Projects</h2>
+        <a href="Projects/PhotoSite/index.html" target="_blank">
+            <div class="projectEntry">
+                <img src="Resources/PhotoSite.png" alt="Photo Site">
+                <p>Photo Site</p>
+                <p>First website created with HTML5 and CSS. Utilizes image handling, font families, and float property
+                </p>
+            </div>
+        </a>
+        <a href="Projects/VideoBackground/index.html" target="_blank">
+            <div class="projectEntry">
+                <img src="Resources/VideoBackground.png" alt="Video Background">
+                <p>Video Background Site</p>
+                <p>Website created using HTML5 and CSS. Utilizes looping video integration.</p>
+            </div>
+        </a>
+        <a href="Projects/LePain/index.html" target="_blank">
+            <div class="projectEntry">
+                <img src="Resources/LePain.png" alt="Le Pain">
+                <p>Le Pain</p>
+                <p>Website that utilizes Bootstrap in addition to HTML5 and CSS. Incorporates Bootstrap elements and
+                    media queries. </p>
+            </div>
+        </a>
+    </section>
+
+    <!-- Github does not support PHP-based form handling.  As such, I am commenting this out and using a more "standard" e-mail handling until such a time comes that I can move this to a new service that I can set up the e-mail handling on. -->
+    <!-- <section id="contact">
+        <h4><a href="javascript:void(0)" class="close" onclick="closeContact()"><i class="fas fa-times"></i></a></h4>
+        <h2>Contact</h2>
+        <form method="post" name="emailForm" action="form-to-email.php">
+            <div>
+                <label for="vName">First Name</label> <input type="text" minlength="2"
+                id="vName" name="name" required>
+            </div>
+            <div>
+                <label for="sEmail">E-Mail</label> <input type="email" id="sEmail"
+                name="email" required>
+            </div>
+            <div>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="reset">
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </section> -->
+
+    <!-- <span>Photo by <a href="https://unsplash.com/@korpa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jr Korpa</a> on <a href="https://unsplash.com/s/photos/fantasy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+
+    <!-- <span>Photo by <a href="https://unsplash.com/@sarahleejs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jongsun Lee</a> on <a href="https://unsplash.com/s/photos/eclipse?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+
+
+section, nav{
+    background-color:#1111cc;
+    color:#dddddd;
+    border: 0px ridge #bbbbbb;
+    box-sizing:border-box;
+    font-family: 'Press Start 2P', cursive;
+    overflow-y:auto;
+}
+
+nav{
+    height:100vh;
+    width:20%;
+    border:5px ridge #bbbbbb;
+    margin:0;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+
+
+body{
+    text-align:center;
+    font-family: 'Cairo', sans-serif;
+    margin-left:20vw;
+    background-color: #999999;
+    margin-top:0;
+    margin-right:0;
+}
+
+section{
+    height:100vh;
+    width:0;
+    position:fixed;
+    top:0;
+    right:0;
+    overflow-x:hidden;
+    transition:width 0.5s, border 0.5s;
+}
+
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:50px;
+}
+
+a{
+    padding: 0px;
+    margin:0px;
+    text-decoration:none;
+}
+
+img{
+    height:150px;
+    padding-top:20px;
+}
+
+a, a:visited{
+    color:#dddddd;
+}
+
+main a, main a:visited{
+    color: #222222;
+}
+
+form{
+    line-height:3;
+    margin: 15% 20px;
+}
+
+.navbutton{
+    text-align:center;
+    margin:auto;
+}
+
+.navButton:hover{
+    background-color:#1111aa;
+}
+
+a:hover{
+    color:#bbbb00;
+}
+
+.navButton:active{
+    background-color:#111188;
+}
+
+a:active{
+    color:#dddd00;
+}
+
+h2{
+    text-align:center;
+    padding:0;
+    margin-top:0;
+    position:static;
+    white-space:nowrap;
+}
+
+h4{
+    text-align:right;
+    padding-right:25px;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.sectionHeading a{
+    text-align:right;
+}
+
+.fas, .fab{
+    font-size:40px;
+}
+
+#techContainer{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+    
+.tech{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-top:30px;
+    width:166px;
+    height:120px;
+    border:3px ridge #dddddd;
+}
+
+.projectEntry{
+    border: 5px ridge #dddddd;
+    text-align:center;
+}
+
+.projectEntry:hover{
+    border: 5px ridge #bbbb00;
+    background-color:#1111aa;
+    color: #bbbb00;
+}
+
+.projectEntry:active{
+    background-color:#111188;
+    border:5px ridge #dddd00;
+    color: #dddd00;
+}
+
+.projectEntry p:last-child{
+    color:#dddddd;
+}
+
+.close{
+    float:right;
+}
+
+#about h3{
+    display:inline-block;
+    border-bottom: 3px solid #dddddd;
+}
+
+#resumeLink{
+    text-align:center;
+    margin-top:40px;
+}
+
+#resumeLink a{
+    border:3px solid #dddddd;
+    padding:20px;
+}
+
+#resumeLink a:hover{
+    border:3px solid #bbbb00;
+    padding:19px;
+    background-color:#1111bb;
+}
+
+#resumeLink a:active{
+    border:3px solid #dddd00;
+    padding:16px;
+    background-color:#111199;
+}
+
+#header{
+    background-image:url(Resources/jr-korpa-PiFo1BU28MI-unsplash.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#portrait{
+    height:30vh;
+    border:5px ridge #888888;
+    padding: 0;
+    margin-top:5%;
+}
+
+@media(max-width:780px){
+    nav{
+        font-size:12px;
+    }
+}
+
+@media(max-width:500px){
+    h2{
+        font-size:20px;
+    }
+    nav{
+        font-size:10px;
+    }
+    .close{
+        float:none;
+    }
+    .fa-times{
+        font-size:30px;
+    }
+}
+
+@media(max-width:440px){
+    .navButton a p:last-child{
+        display:none;
+    }
+}
+
+@media(max-width:370px){
+    h2{
+        font-size:16px;
+    }
+    .fa-times{
+        font-size:20px;
+    }
+    .navButton .fas, .navbutton .fab{
+        font-size:30px;
+    }
+    .projectEntry img{
+        height:100px;
+    }
+}
+
+@media(min-width:850px){
+    img{
+        height:190px;
+    }
+    .tech{
+        width:210px;
+        height:150px;
+        padding-top:50px;
+    }
+    .tech .fas, .tech .fab{
+        font-size:50px;
+    }
+}
+
+@media(min-width:950px){
+    .navButton p{
+        font-size:20px;
+    }
+    .navButton .fas, .navButton .fab{
+        font-size:50px;
+    }
+    .tech{
+        width: 240px;
+        height:180px;
+        font-size:20px;
+        padding-top:70px;
+    }
+    .tech .fas, .tech .fab{
+        font-size:60px;
+    }
+}
+
+@media(min-width:1200px){
+    .navButton .fas, .navButton .fab{
+        font-size:60px;
+    }
+    img{
+        height:240px;
+    }
+}
