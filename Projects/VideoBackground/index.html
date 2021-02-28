@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <!-- Link to Google Fonts (Nunito 400 and 600) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="video-container">
+            <!-- Autoplay starts the video, loop allows the video to loop, muted removes sound from the video -->
+            <video src="html.mp4" autoplay loop muted></video>
+        </div>
+        <!-- Div to cover/darken the background video -->
+        <div class="cover"></div>
+        <div class="content">
+            <h1>Douglas Buncher</h1>
+            <h2>Web Developer</h2>
+            <!-- using a hashtag (or presumably a period to denote class) will set the A tag to take the user elsewhere on the current page, rather than to a different one. -->
+            <a href="#about" class="click">About</a>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>About</h1>
+        <p>Currently Enrolled in the Barren County Skills Development Academy Web Development Program</p>
+        <h2>Follow me on social media</h2>
+        <div class="social-media">
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>
