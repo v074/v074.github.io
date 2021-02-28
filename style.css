@@ -24,8 +24,6 @@ nav{
     justify-content:space-evenly;
 }
 
-
-
 body{
     text-align:center;
     font-family: 'Cairo', sans-serif;
@@ -171,18 +169,19 @@ h4{
 
 #resumeLink a{
     border:3px solid #dddddd;
-    padding:20px;
+    padding:20px 15px;
+    white-space: nowrap;
 }
 
 #resumeLink a:hover{
     border:3px solid #bbbb00;
-    padding:19px;
+    padding:19px 14px;
     background-color:#1111bb;
 }
 
 #resumeLink a:active{
     border:3px solid #dddd00;
-    padding:16px;
+    padding:16px ;
     background-color:#111199;
 }
 
@@ -220,7 +219,7 @@ h4{
     }
 }
 
-@media(max-width:440px){
+@media(max-width:440px), (max-height:400px){
     .navButton a p:last-child{
         display:none;
     }
@@ -233,11 +232,14 @@ h4{
     .fa-times{
         font-size:20px;
     }
-    .navButton .fas, .navbutton .fab{
-        font-size:30px;
-    }
     .projectEntry img{
         height:100px;
+    }
+}
+
+@media(max-width:370px),(max-height:300px){
+    .navButton .fas, .navbutton .fab{
+        font-size:30px;
     }
 }
 
@@ -259,9 +261,6 @@ h4{
     .navButton p{
         font-size:20px;
     }
-    .navButton .fas, .navButton .fab{
-        font-size:50px;
-    }
     .tech{
         width: 240px;
         height:180px;
@@ -273,11 +272,21 @@ h4{
     }
 }
 
-@media(min-width:1200px){
+@media (min-width:950px) and (min-height:660px) {
     .navButton .fas, .navButton .fab{
-        font-size:60px;
+        font-size:50px;
     }
+}
+
+@media(min-width:1200px){
     img{
         height:240px;
     }
+}
+
+@media(min-width:1200px) and (min-height:700px){
+    .navButton .fas, .navButton .fab{
+        font-size:60px;
+    }
+
 }
