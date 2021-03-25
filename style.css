@@ -157,6 +157,11 @@ h4{
     float:right;
 }
 
+.opened{
+    width:80%;
+    border-width:5px;
+}
+
 #about h3{
     display:inline-block;
     border-bottom: 3px solid #dddddd;
