@@ -1,0 +1,73 @@
+*{
+    /* Includes the padding and border when setting a width or height for an element */
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #7504b6;
+    color: #eef1ef;
+    font-family: 'Roboto Condensed', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    padding:25px;
+}
+
+h2{
+    /* Top, Left/Right, Bottom */
+    margin:10px 0 20px;
+    text-align:center;
+
+}
+
+.container{
+    background:#443850;
+    padding:15px;
+    width: 350px;
+}
+
+.result-container{
+    background:#243119;
+    height:50px;
+    font-size:18px;
+    letter-spacing: 1px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    /* to position the clipboard button */
+    position:relative;
+}
+
+.btn{
+    background-color:#7504b6;
+    color:#eef1ef;
+    border:none;
+    /* Changes the cursor when hovering over a button. */
+    cursor:pointer;
+    padding:8px 12px;
+}
+
+.setting{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+#clipboard{
+    position:absolute;
+    top:5px;
+    right:5px;
+    font-size:20px;
+}
+
+#generate{
+    font-size:16px;
+    width:100%;
+}
+
+@media(max-width:400px){
+    .result-container{
+        font-size:14px;
+    }
+}
