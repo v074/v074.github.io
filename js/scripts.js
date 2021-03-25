@@ -38,14 +38,3 @@ function closeProjects(){
 //     document.getElementById("contact").style.width = "0";
 //     document.getElementById("contact").style.borderWidth = "0px";
 // }
-
-// As contact form handling via PHP is not possible on Github, these are being commented out and left in for legacy reference.
-// function openContact(){
-//     document.getElementById("contact").style.width = "80%";
-//     document.getElementById("contact").style.borderWidth = "5px";
-// }
-
-// function closeContact(){
-//     document.getElementById("contact").style.width = "0";
-//     document.getElementById("contact").style.borderWidth = "0px";
-// }
